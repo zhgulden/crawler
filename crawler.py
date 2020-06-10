@@ -34,7 +34,7 @@ def get_links_bfs(url):
 def bfs(url):
     queue = deque([(url,0)])
     depth = 1
-    while queue and len(set(urls_bfs)) < 10:
+    while queue and len(set(urls_bfs)) < 1000:
         url,depth = queue.popleft()
         if depth < 3:
                 download_page(url)
