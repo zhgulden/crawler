@@ -10,7 +10,6 @@ def download_page(url):
     page = urlopen(url)
     html_content = page.read()
     html_content = str(html_content)
-    url = url.split('https://en.wikipedia.org/',1)[1].replace("/","-")
     file = open('pages/' + url + '.txt', 'w')
     file.write(html_content)
     file.close()
