@@ -15,9 +15,7 @@ Download the page and save it using the name '/wiki/...' this will help us const
 def download_page(url)
 ```
 
-Function to extract the links from content block of a page and return it in a list. Checks for conditions such as 
-avoiding administrative  link, links to another section in same page, link to main page, external links. Respects 
-politeness policy using a delay before HTTP request
+Function to extract the links from content block of a page and return it in a list
 
 ```
 def get_links_bfs(url)
